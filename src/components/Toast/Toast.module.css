@@ -1,0 +1,46 @@
+.toast {
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  min-width: 200px;
+  padding: 12px 16px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  pointer-events: auto;
+  margin-top: 8px;
+  z-index: 9999;
+}
+
+.message {
+  flex: 1;
+  margin-right: 8px;
+}
+
+.closeButton {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.success {
+  background-color: #38a169; /* зелений */
+}
+
+.error {
+  background-color: #e53e3e; /* червоний */
+}
+
+.info {
+  background-color: #3182ce; /* синій */
+}
+
+.warning {
+  background-color: #dd6b20; /* оранжевий */
+}

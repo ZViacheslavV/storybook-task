@@ -12,8 +12,7 @@ interface ToastDemoProps {
 const ToastDemo: React.FC<ToastDemoProps> = ({ type, message, duration, showCloseButton }) => {
   const [open, setOpen] = useState(true);
 
-  const handleClose = (id: string) => {
-    console.log('Closing toast:', id);
+  const handleClose = () => {
     setOpen(false);
   };
 
@@ -38,7 +37,13 @@ const meta: Meta<typeof ToastDemo> = {
   title: 'Feedback/Toast',
   component: ToastDemo,
   argTypes: {
-    type: { control: { type: 'select', options: ['success', 'error', 'info', 'warning'] } },
+    type: {
+      control: {
+        type: 'select',
+        options: ['success', 'error', 'info', 'warning'],
+      },
+    },
+    message: { control: 'text' },
     duration: { control: 'number' },
     showCloseButton: { control: 'boolean' },
   },
@@ -48,9 +53,13 @@ const meta: Meta<typeof ToastDemo> = {
     duration: 3000,
     showCloseButton: true,
   },
+  parameters: {
+    controls: { expanded: true },
+  },
 };
 
 export default meta;
+
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {

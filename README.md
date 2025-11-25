@@ -34,7 +34,6 @@ npm run storybook
 
 npm run storybook: Runs the Storybook server locally.
 npm run build: Builds the project for production (if configured).
-npm test: Runs your component tests (if you have tests).
 
 ## 📁 Project Structure
 
@@ -49,8 +48,8 @@ project-root/
 │ │ ├── Input/
 │ │ ├── Toast/
 │ │ └── SidebarMenu/
-│ ├── hooks/
-│ └── utils/
+│ ├── stories/
+│ └── types/
 ├── package.json
 ├── tsconfig.json
 └── README.md
@@ -65,6 +64,8 @@ public — static files served by Storybook via staticDirs
 ## ✨ Components
 
 Here are the main components provided in this library:
+<br/>
+
 Input:
 
 - Supports types: text, password, number

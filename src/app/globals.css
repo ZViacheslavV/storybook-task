@@ -40,3 +40,8 @@ a {
     color-scheme: dark;
   }
 }
+
+/* Base styles */
+button {
+  cursor: pointer;
+}

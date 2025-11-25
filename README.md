@@ -32,8 +32,8 @@ npm run storybook
 
 ## 🛠️ Available Scripts
 
-npm run storybook: Runs the Storybook server locally.
-npm run build: Builds the project for production (if configured).
+npm run storybook: Runs the Storybook server locally. <br/>
+npm run build: Builds the project for production.
 
 ## 📁 Project Structure
 

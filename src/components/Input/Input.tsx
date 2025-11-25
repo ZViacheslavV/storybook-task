@@ -13,32 +13,34 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
 const Input: FC<InputProps> = ({
   type = 'text',
   clearable = false,
-  /* value: propValue, */
+  value: propValue,
   onChange,
   ...rest
 }) => {
-  const [showPassword, setShowPassword] = useState(false);
-  /* const [internalValue, setInternalValue] = useState<string | number>(propValue ?? ''); */
+  const safeValue = (propValue as string | number) ?? '';
 
-  //   const isControlled = propValue !== undefined;
+  const [showPassword, setShowPassword] = useState(false);
+  const [internalValue, setInternalValue] = useState<string | number>(safeValue);
+
+  const isControlled = propValue !== undefined;
 
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     const val = e.target.value;
-    /*     if (!isControlled) {
+    if (!isControlled) {
       setInternalValue(val);
-    } */
-    onChange && onChange(e);
+    }
+    if (onChange) onChange(e);
   };
 
   const handleClear = () => {
-    /*     if (!isControlled) {
+    if (!isControlled) {
       setInternalValue('');
-    } */
+    }
 
     const event = {
       target: { value: '' },
-    } as unknown as ChangeEvent<HTMLInputElement>;
-    onChange && onChange(event);
+    } /* as unknown */ as ChangeEvent<HTMLInputElement>;
+    if (onChange) onChange(event);
   };
 
   const toggleShowPassword = () => {
@@ -47,14 +49,14 @@ const Input: FC<InputProps> = ({
 
   const currentType = type === 'password' ? (showPassword ? 'text' : 'password') : type;
 
-  /*   const displayValue = isControlled ? propValue : internalValue; */
+  const displayValue = isControlled ? propValue : internalValue;
 
   return (
     <div className={styles.wrapper}>
       <input
         className={styles.input}
         type={currentType}
-        /*         value={displayValue} */
+        value={displayValue}
         onChange={handleChange}
         {...rest}
       />
@@ -68,7 +70,7 @@ const Input: FC<InputProps> = ({
           {showPassword ? '🙈' : '👁️'}
         </button>
       )}
-      {clearable /* && displayValue */ && (
+      {clearable && displayValue && (
         <button
           type="button"
           className={styles.clearButton}

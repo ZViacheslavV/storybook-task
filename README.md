@@ -87,7 +87,7 @@ Sidebar Menu:
 
 ## 📸 Screenshots
 
-Here are example screenshots of the components in different states (you can put your images into docs/screenshots or a similar folder):
+Here are example screenshots of the components in different states:
 <br/>
 
 ### Input

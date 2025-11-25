@@ -2,15 +2,7 @@
 
 import React, { useState, useEffect, FC } from 'react';
 import styles from './SidebarMenu.module.css';
-
-// import { MenuItem } from './SideBarMenu.types';
-
-interface MenuItem {
-  id: string;
-  label: string;
-  onClick?: () => void;
-  subItems?: MenuItem[];
-}
+import { MenuItem } from '@/types/menu';
 
 interface SidebarMenuProps {
   isOpen: boolean;
@@ -18,7 +10,7 @@ interface SidebarMenuProps {
   items: MenuItem[];
 }
 
-export const SidebarMenu: FC<SidebarMenuProps> = ({ isOpen, onClose, items }) => {
+const SidebarMenu: FC<SidebarMenuProps> = ({ isOpen, onClose, items }) => {
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
 
   useEffect(() => {
@@ -82,3 +74,5 @@ export const SidebarMenu: FC<SidebarMenuProps> = ({ isOpen, onClose, items }) =>
     </>
   );
 };
+
+export default SidebarMenu;

@@ -39,6 +39,8 @@ npm test: Runs your component tests (if you have tests).
 ## 📁 Project Structure
 
 Here’s an example of the folder structure for the component library:
+
+```bash
 project-root/
 ├── .storybook/
 ├── public/
@@ -52,6 +54,9 @@ project-root/
 ├── package.json
 ├── tsconfig.json
 └── README.md
+
+```
+
 src/components — contains UI components, CSS modules, types, and stories
 hooks — any custom React hooks (e.g. a toast hook)
 utils — helper functions
@@ -61,18 +66,21 @@ public — static files served by Storybook via staticDirs
 
 Here are the main components provided in this library:
 Input:
+
 - Supports types: text, password, number
 - Password visibility toggle (eye icon)
 - Clearable input via clearable prop
 - Can be controlled or uncontrolled
-  
+
 Toast:
+
 - Types: success, error, info, warning
 - Auto-dismiss after a configurable duration
 - Fade / slide animation
 - Optional manual close button
-  
+
 Sidebar Menu:
+
 - Slides in/out from the right
 - Supports nested submenus
 - Closes when clicking the backdrop
@@ -112,6 +120,8 @@ Here are example screenshots of the components in different states (you can put 
 ## 💡 How to Use in Your Project
 
 You can import and use the components like this:
+
+```bash
 import { Input, Toast, SidebarMenu } from "your-component-library";
 
 function App() {
@@ -130,6 +140,7 @@ return (
 
 );
 }
+```
 
 ## 👩‍💻 Development
 

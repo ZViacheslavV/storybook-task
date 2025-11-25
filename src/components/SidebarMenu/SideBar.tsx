@@ -1,7 +1,16 @@
+'use client';
+
 import React, { useState, useEffect, FC } from 'react';
 import styles from './SidebarMenu.module.css';
 
-import { MenuItem } from './SideBarMenu.types';
+// import { MenuItem } from './SideBarMenu.types';
+
+interface MenuItem {
+  id: string;
+  label: string;
+  onClick?: () => void;
+  subItems?: MenuItem[];
+}
 
 interface SidebarMenuProps {
   isOpen: boolean;

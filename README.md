@@ -1,6 +1,6 @@
 # React Component Library
 
-A small UI component library built with **React**, **TypeScript**, and **Storybook**.  
+A small UI component library built with **React (Next.js)**, **TypeScript**, and **Storybook**.  
 It includes custom **Input**, **Toast notification**, and **Sidebar Menu** components with different states and behaviors.
 
 ---

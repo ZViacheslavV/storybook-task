@@ -15,7 +15,10 @@ const SidebarMenu: FC<SidebarMenuProps> = ({ isOpen, onClose, items }) => {
 
   useEffect(() => {
     if (!isOpen) {
-      setOpenIds(new Set());
+      const timeout = setTimeout(() => {
+        setOpenIds(new Set());
+      }, 0);
+      return () => clearTimeout(timeout);
     }
   }, [isOpen]);
 

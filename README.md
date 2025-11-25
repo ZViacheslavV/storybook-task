@@ -78,11 +78,34 @@ Closes when clicking the backdrop
 ## 📸 Screenshots
 
 Here are example screenshots of the components in different states (you can put your images into docs/screenshots or a similar folder):
-Input
+<br/>
 
-Toast
+### Input
 
-Sidebar Menu
+![Input – Default](src/stories/assets/input/input-default.png)  
+![Input – Clearable](src/stories/assets/input/input-clearable.png)
+
+![Input – Password Clearable](src/stories/assets/input/input-password-clearable.png)
+
+![Input – Password](src/stories/assets/input/input-password.png)
+
+![Input – Number](src/stories/assets/input/input-number.png)
+
+### Toast
+
+![Toast – Info, Default](src/stories/assets/feedback/feedback-default.png)
+
+![Toast – Info, Error](src/stories/assets/feedback/feedback-error.png)
+
+![Toast – Info, Success](src/stories/assets/feedback/feedback-success.png)
+
+![Toast – Info, Warning](src/stories/assets/feedback/feedback-warning-noclose.png)
+
+### Sidebar Menu
+
+![SidebarMenu – First](src/stories/assets/sidebar/sidebar-first.png)
+
+![SidebarMenu – Second](src/stories/assets/sidebar/sidebar-second.png)
 
 ## 💡 How to Use in Your Project
 

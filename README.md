@@ -60,20 +60,22 @@ public — static files served by Storybook via staticDirs
 ## ✨ Components
 
 Here are the main components provided in this library:
-Input
-Supports types: text, password, number
-Password visibility toggle (eye icon)
-Clearable input via clearable prop
-Can be controlled or uncontrolled
-Toast
-Types: success, error, info, warning
-Auto-dismiss after a configurable duration
-Fade / slide animation
-Optional manual close button
-Sidebar Menu
-Slides in/out from the right
-Supports nested submenus
-Closes when clicking the backdrop
+Input:
+- Supports types: text, password, number
+- Password visibility toggle (eye icon)
+- Clearable input via clearable prop
+- Can be controlled or uncontrolled
+  
+Toast:
+- Types: success, error, info, warning
+- Auto-dismiss after a configurable duration
+- Fade / slide animation
+- Optional manual close button
+  
+Sidebar Menu:
+- Slides in/out from the right
+- Supports nested submenus
+- Closes when clicking the backdrop
 
 ## 📸 Screenshots
 

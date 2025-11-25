@@ -93,7 +93,8 @@ Here are example screenshots of the components in different states:
 
 ### Input
 
-![Input – Default](src/stories/assets/input/input-default.png)  
+![Input – Default](src/stories/assets/input/input-default.png)
+
 ![Input – Clearable](src/stories/assets/input/input-clearable.png)
 
 ![Input – Password Clearable](src/stories/assets/input/input-password-clearable.png)

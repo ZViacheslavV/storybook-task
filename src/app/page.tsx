@@ -25,15 +25,16 @@ const Home = () => {
   return (
     <main>
       <div className={css.container}>
-        <button onClick={() => setSidebarOpen(true)}>Open Sidebar</button>
+        <button className={css.btnSidebar} onClick={() => setSidebarOpen(true)}>
+          Open Sidebar
+        </button>
 
         <SidebarMenu
           isOpen={isSidebarOpen}
           onClose={() => setSidebarOpen(false)}
           items={menuItems}
         />
-        <Input />
-        {/* <SidebarMenu /> */}
+        <Input value={'Test text'} type="password" />
         <Toast
           id="test"
           type="info"

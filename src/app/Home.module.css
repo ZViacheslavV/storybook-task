@@ -139,3 +139,14 @@ a.secondary {
     --button-secondary-border: #1a1a1a;
   }
 }
+
+.btnSidebar {
+  padding: 8px;
+  max-width: 150px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.btnSidebar:hover {
+  background-color: rgb(197, 194, 194);
+}

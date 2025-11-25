@@ -8,7 +8,7 @@ interface ToastProps {
   id: string;
   type?: ToastType;
   message: string;
-  duration?: number; // мс, через скільки закрити
+  duration?: number;
   onClose: (id: string) => void;
   showCloseButton?: boolean;
 }

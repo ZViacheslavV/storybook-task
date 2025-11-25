@@ -1,7 +1,7 @@
 import React, { useState, useEffect, FC } from 'react';
 import styles from './SidebarMenu.module.css';
 
-import { MenuItem } from './SidebarMenu.types';
+import { MenuItem } from './SideBarMenu.types';
 
 interface SidebarMenuProps {
   isOpen: boolean;

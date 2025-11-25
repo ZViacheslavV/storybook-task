@@ -143,10 +143,10 @@ a.secondary {
 .btnSidebar {
   padding: 8px;
   max-width: 150px;
-  cursor: pointer;
+
   border-radius: 8px;
 }
 
 .btnSidebar:hover {
-  background-color: rgb(197, 194, 194);
+  background-color: rgb(213, 211, 211);
 }

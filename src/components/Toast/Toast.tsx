@@ -15,14 +15,14 @@ interface ToastProps {
   showCloseButton?: boolean;
 }
 
-export const Toast: React.FC<ToastProps> = ({
+export const Toast = ({
   id,
   type = 'info',
   message,
   duration = 3000,
   onClose,
   showCloseButton = false,
-}) => {
+}: ToastProps) => {
   const [exiting, setExiting] = useState(false);
 
   useEffect(() => {

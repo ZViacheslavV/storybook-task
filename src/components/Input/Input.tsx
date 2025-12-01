@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, ChangeEvent, FC } from 'react';
+import React, { useState, ChangeEvent } from 'react';
 import styles from './Input.module.css';
 
 type InputType = 'text' | 'password' | 'number';
@@ -10,13 +10,13 @@ interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
   clearable?: boolean;
 }
 
-const Input: FC<InputProps> = ({
+const Input = ({
   type = 'text',
   clearable = false,
   value: propValue,
   onChange,
   ...rest
-}) => {
+}: InputProps) => {
   const safeValue = (propValue as string | number) ?? '';
 
   const [showPassword, setShowPassword] = useState(false);

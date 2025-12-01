@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect, FC } from 'react';
+import React, { useState, useEffect } from 'react';
 import styles from './SidebarMenu.module.css';
 import { MenuItem } from '@/types/menu';
 
@@ -10,7 +10,7 @@ interface SidebarMenuProps {
   items: MenuItem[];
 }
 
-const SidebarMenu: FC<SidebarMenuProps> = ({ isOpen, onClose, items }) => {
+const SidebarMenu = ({ isOpen, onClose, items }: SidebarMenuProps) => {
   const [openIds, setOpenIds] = useState<Set<string>>(new Set());
 
   useEffect(() => {
